@@ -11,7 +11,7 @@ class Hewan
 	}
 }
 
-// Contoh inheritance
+// Contoh inheritance 
 class Kucing extends Hewan
 {
 	// Contoh implementasi properti
@@ -64,5 +64,35 @@ echo "Jenis Kelamin : ".$Kucing_Chania -> jeniskelamin."<br />";
 echo "<br />=================================<br />";
 
 
+// namespace
+php
+namespace Html;
+class Table {
+  public $title = "";
+  public $numRows = 0;
+  public function message() {
+    echo "<p>Table '{$this->title}' has {$this->numRows} rows.</p>";
+  }
+}
+$table = new Table();
+$table->title = "My table";
+$table->numRows = 5;
+$table->message();
+
+
+//constans
+define("GREETING", "Welcome to W3Schools.com!");
+echo GREETING;
+
+//self keyword
+class Person {
+	
+	public static $name;
+	
+	
+	public static function getName() {
+		return self::$name;     // nahhh self keyword digunakan untk static methode
+	}
+}
 
  ?>
