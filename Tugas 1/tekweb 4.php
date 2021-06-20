@@ -96,7 +96,7 @@ interface AnimalShelter
 
 class DogShelter implements AnimalShelter
 {
-    public function adopt(string $name): Dog /
+    public function adopt(string $name): Dog 
     {
         return new Dog($name);
     }
@@ -151,10 +151,11 @@ $pattern = "/hayuuu/i";
 echo preg_match($pattern, $str)
 
 // reflection php class
-class UUID {}  
+class UUID {  
 
 $reflection = new ReflectionClass(new User(‘silaingg’, new UUID(1234))); 
 
+}
 
 
 ?>

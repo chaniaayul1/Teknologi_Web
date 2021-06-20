@@ -65,7 +65,7 @@ echo "<br />=================================<br />";
 
 
 // namespace
-php
+
 namespace Html;
 class Table {
   public $title = "";

@@ -9,7 +9,6 @@ class Orang{
         print "Ini Awalnya\n";
     }  
 
-
     // Visibility
     public $public = 'Public';
     protected $protected = 'Protected';
@@ -47,9 +46,10 @@ class Tua extends Orang{
         print "Ini Akhirnya\n";
     }
 }
+
     // Polymorphism
-interface Kandungan (){
-    public function rasa();
+interface Kandungan{
+    function rasa($persen);
 }
 
 class Kawa implements Kandungan{
@@ -70,9 +70,9 @@ abstract class Jager {
 
 // Interface
 interface Meister {
-    abstract public function Gold();
-    abstract public function Premium($nama, $rasa);
-    abstract public function Plain() : string;
+    public function Gold();
+    public function Premium($nama, $rasa);
+    public function Plain() : string;
   }
 
 // Getter and Setter
